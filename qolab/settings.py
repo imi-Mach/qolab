@@ -25,8 +25,9 @@ SECRET_KEY = '*ga!pav%wi&91x$al436f!4+ttw^v+=2y6di$q)kt)5g2^v&g*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS=['https://qolab.mkmachado.com']
 
 # Application definition
 
@@ -130,6 +131,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 2
+
 LOGIN_REDIRECT_URL = '/'
 
 SOCIALACCOUNT_PROVIDERS = {
